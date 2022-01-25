@@ -2,7 +2,6 @@ apiVersion: kubeflow.org/v1beta1
 kind: Profile
 metadata:
   name: $(profile-name)
-  namespace: kubeflow
 spec:
   owner:
     kind: User
