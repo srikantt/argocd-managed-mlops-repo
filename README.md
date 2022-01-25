@@ -1,7 +1,7 @@
 # Kubernetes GitOps Repo
 
 This is an example on how I would structure a 1:1 (repo-to-single cluster)
-git repo for a Kubernetes cluster. This is based on the [OpenShift](https://github.com/christianh814/example-openshift-go-repo)
+git repo for a Kubernetes cluster. This is based on the [OpenShift](https://github.com/srikantt/example-openshift-go-repo)
 repo I created.
 
 This example assumes (as I mentioned in the 1:1 part above) that it's a
@@ -71,7 +71,7 @@ kind create cluster
 Then, just apply this repo.
 
 ```shell
-until kubectl apply -k https://github.com/christianh814/example-kubernetes-go-repo/cluster-XXXX/bootstrap/overlays/default; do sleep 3; done
+until kubectl apply -k https://github.com/srikantt/example-kubernetes-go-repo/cluster-XXXX/bootstrap/overlays/default; do sleep 3; done
 ```
 
 This should give you 4 applications

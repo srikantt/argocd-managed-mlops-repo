@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+# - https://gitlab.com/srikantt/test-applicationsets/list-generator/k8s/overlays/noing-blue?ref=main
+  - https://github.com/kubeflow/manifests/tree/master/example?ref=master
+# patchesJson6902:
+#   - target:
+#       version: v1
+#       group: apps
+#       kind: Deployment
+#       name: bgd
+#     path: bgd-deployment.yaml
