@@ -222,7 +222,7 @@ spec:
           type: object
         status:
           type: object
-          x-kubernetes-preserve-unknown-fields: false
+          x-kubernetes-preserve-unknown-fields: true
       type: object
   versions:
   - name: v1beta1
@@ -1430,7 +1430,7 @@ spec:
     listKind: EnvoyFilterList
     plural: envoyfilters
     singular: envoyfilter
-  preserveUnknownFields: true
+  preserveUnknownFields: false
   scope: Namespaced
   subresources:
     status: {}
