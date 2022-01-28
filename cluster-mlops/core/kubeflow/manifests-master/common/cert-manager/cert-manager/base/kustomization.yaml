@@ -5,7 +5,7 @@ resources:
 # Manifests downloaded from:
 # https://github.com/jetstack/cert-manager/releases/download/v1.3.1/cert-manager.yaml
 - cert-manager.yaml
-- sealedsecrets-controller.yaml
+#- sealedsecrets-controller.yaml
 
 # XXX: Do NOT use the namespace transformer, as cert-manager defines resources
 # in two namespaces, 'cert-manager' and 'kube-system'.
