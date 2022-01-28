@@ -222,7 +222,7 @@ spec:
           type: object
         status:
           type: object
-          x-kubernetes-preserve-unknown-fields: true
+          x-kubernetes-preserve-unknown-fields: false
       type: object
   versions:
   - name: v1beta1
