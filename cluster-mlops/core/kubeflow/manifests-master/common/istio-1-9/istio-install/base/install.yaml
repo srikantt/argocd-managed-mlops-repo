@@ -2505,6 +2505,7 @@ spec:
     port: 443
     protocol: TCP
     targetPort: 8443
+    nodePort: 31709
   - name: tcp
     port: 31400
     protocol: TCP
@@ -2516,7 +2517,7 @@ spec:
   selector:
     app: istio-ingressgateway
     istio: ingressgateway
-  type: LoadBalancer
+  type: NodePort
 ---
 apiVersion: v1
 kind: Service
