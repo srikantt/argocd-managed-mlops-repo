@@ -16,4 +16,4 @@ spec:
     - destination:
         port:
           number: 31709
-        host: '*'
+        host: istio-ingressgateway
