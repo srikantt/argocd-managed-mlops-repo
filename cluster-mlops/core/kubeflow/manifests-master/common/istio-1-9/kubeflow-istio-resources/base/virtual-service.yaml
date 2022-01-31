@@ -9,11 +9,11 @@ spec:
   - kubeflow/kubeflow-gateway
   http:
   - match:
-    - port: 443
+    #- port: 443
     - uri:
         prefix: /kubeflow
     route:
     - destination:
         port:
-          number: 31709
+          number: 443
         host: istio-ingressgateway
