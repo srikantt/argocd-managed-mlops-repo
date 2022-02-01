@@ -22,6 +22,6 @@ spec:
       protocol: HTTPS
     tls:
       mode: SIMPLE
-      credentialName: kubeflow-ingress-secret
+      credentialName: istio-ingressgateway-certs
       privateKey: sds
       serverCertificate: sds
