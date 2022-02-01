@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+- cert-secret-for-kubeflow.yaml
 - kf-istio-resources.yaml
 - virtual-service.yaml
 - cluster-roles.yaml
