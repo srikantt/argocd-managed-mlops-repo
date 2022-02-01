@@ -6,7 +6,7 @@ resources:
 - deny_all_authorizationpolicy.yaml
 - gateway.yaml
 - x-forwarded-host.yaml
-#- secret-encrypted.yaml
+- kubeflow-certificate.yaml
 
 namespace: istio-system
 
