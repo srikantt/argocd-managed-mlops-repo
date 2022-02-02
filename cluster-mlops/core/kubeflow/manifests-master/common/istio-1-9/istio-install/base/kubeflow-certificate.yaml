@@ -4,9 +4,10 @@ metadata:
   name: istio-ingressgateway-certs
   namespace: istio-system
 spec:
-  commonName: istio-ingressgateway.istio-system.svc
+  commonName: istio-ingressgateway.istio-system.svc.cluster.local
   dnsNames:
-  - istio-ingressgateway.istio-system.svc
+  - istio-ingressgateway.istio-system.svc.cluster.local
+  - ec2-13-40-162-124.eu-west-2.compute.amazonaws.com
   issuerRef:
     kind: ClusterIssuer
     name: lets-encrypt-cluster-issuer
