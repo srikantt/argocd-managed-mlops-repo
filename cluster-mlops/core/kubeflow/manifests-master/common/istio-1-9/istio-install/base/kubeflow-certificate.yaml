@@ -10,5 +10,5 @@ spec:
   #- ec2-13-40-162-124.eu-west-2.compute.amazonaws.com
   issuerRef:
     kind: ClusterIssuer
-    name: lets-encrypt-cluster-issuer
+    name: kubeflow-self-signing-issuer
   secretName: istio-ingressgateway-certs
