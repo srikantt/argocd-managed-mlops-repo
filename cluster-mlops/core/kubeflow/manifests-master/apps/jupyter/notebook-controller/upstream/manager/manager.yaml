@@ -34,6 +34,12 @@ spec:
               configMapKeyRef:
                 name: config
                 key: ISTIO_GATEWAY
+          - name: ENABLE_CULLING
+            value: "true"
+          - name: IDLE_TIME
+            value: "1" # In minutes 
+          - name: CULLING_CHECK_PERIOD
+            value: "1" # Check every 1 minute
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
