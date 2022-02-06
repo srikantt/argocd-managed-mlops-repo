@@ -113,20 +113,20 @@ spawnerFormDefaults:
     # For example, a list with 2 Data Volumes:
     value:
       - value:
-    #       type:
-    #         value: New
+          type:
+            value: New
           name:
             value: 's6'
-    #       size:
-    #         value: '10Gi'
-    #       class:
-    #         value: standard
+          size:
+            value: '5Gi'
+          #class:
+           # value: standard
           mountPath:
             value: /var/run/s6
-    #       accessModes:
-    #         value: ReadWriteOnce
-    #       class:
-    #         value: {none}
+          accessModes:
+            value: ReadWriteOnce
+          class:
+            value: nfs-client
     #   - value:
     #       type:
     #         value: New
