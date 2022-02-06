@@ -106,23 +106,23 @@ spawnerFormDefaults:
     readOnly: false
   dataVolumes:
     # List of additional Data Volumes to be attached to the user's Notebook
-    value: []
+    #value: []
     # Each Data Volume is declared with the following attributes:
     # Type, Name, Size, MountPath and Access Mode
     #
     # For example, a list with 2 Data Volumes:
-    # value:
-    #   - value:
+    value:
+      - value:
     #       type:
     #         value: New
-    #       name:
-    #         value: '{notebook-name}-vol-1'
+          name:
+            value: 's6'
     #       size:
     #         value: '10Gi'
     #       class:
     #         value: standard
-    #       mountPath:
-    #         value: /home/jovyan/vol-1
+          mountPath:
+            value: /var/run/s6
     #       accessModes:
     #         value: ReadWriteOnce
     #       class:
